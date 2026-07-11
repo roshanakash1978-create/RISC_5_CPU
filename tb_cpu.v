@@ -71,13 +71,4 @@ module tb_cpu_top;
 
         $finish;
     end
-
-    // ----------------------------
-    // Waveform dump (for non-Vivado simulators)
-    // ----------------------------
-    initial begin
-        $dumpfile("rv32i_cpu_waveform.vcd");
-        $dumpvars(0, tb_cpu_top);
-    end
-
 endmodule
