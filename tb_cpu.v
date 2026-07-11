@@ -44,10 +44,4 @@ module tb_cpu_top;
         #800;
         $finish;
     end
-
-    initial begin
-        $dumpfile("rv32i_cpu_waveform.vcd");
-        $dumpvars(0, tb_cpu_top);
-    end
-
 endmodule
