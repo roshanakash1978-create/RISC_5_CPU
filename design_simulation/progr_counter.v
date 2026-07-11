@@ -1,10 +1,9 @@
 // pc.v
 `timescale 1ns / 1ps
-
 module pc (
     input  wire        clk,
     input  wire        reset,
-    input  wire [31:0] pc_next,   // next PC decided by control logic
+    input  wire [31:0] pc_next, 
     output reg  [31:0] pc
 );
     always @(posedge clk or posedge reset) begin
